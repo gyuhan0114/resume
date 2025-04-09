@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 이력서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #1b1b1b;
+            color: #f1f1f1;
+            line-height: 1.6;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f06292, #e91e63);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 4px solid #333;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        header .social-links a {
+            margin: 0 15px;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        header .social-links a:hover {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #ffeb3b;
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        section p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ccc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        ul li {
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1.1em;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-10px);
+            background-color: #f06292;
+        }
+
+        .project {
+            margin-bottom: 50px;
+            background: #2c2c2c;
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .project h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #f06292;
+        }
+
+        .project a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: #333;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        form input, form textarea {
+            padding: 15px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            border: 1px solid #444;
+            background: #222;
+            color: #fff;
+        }
+
+        form button {
+            padding: 15px;
+            background-color: #f06292;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #e91e63;
+        }
+
+        footer {
+            background-color: #222;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="container">
+            <h1>김규한 - 개발자 이력서</h1>
+            <p>백엔드 개발자</p>
+            <div class="social-links">
+                <a href="https://github.com/your-github" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">Notion</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 소개 -->
+    <section id="about">
+        <div class="container">
+            <h2>자기소개</h2>
+            <p>저는 다양한 웹 애플리케이션을 설계하고 구현하는 데 열정을 가지고 있는 백엔드 개발자입니다. 문제 해결을 위한 효율적인 코드 작성과 최적화를 중요시합니다. 최신 기술을 빠르게 습득하여 최상의 성능을 발휘할 수 있는 시스템을 개발하고 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section id="skills">
+        <div class="container">
+            <h2>기술 스택</h2>
+            <ul>
+                <li>Node.js</li>
+                <li>Java, Spring</li>
+                <li>Python, Django</li>
+                <li>MySQL</li>
+                <li>WebSocket, WebRTC</li>
+                <li>Docker, AWS</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 프로젝트 -->
+    <section id="projects">
+        <div class="container">
+            <h2>프로젝트</h2>
+            <div class="project">
+                <h3>프로젝트 1: 손 재활 게임 서버</h3>
+                <p>스프링 부트를 사용하여 게임 회원 기능, 공지사항 / 문의 등 게시글 기능, 게임 데이터 저장 및 통신 기능 등을 구현하였습니다.</p>
+                <a href="https://github.com/your-github/project1" target="_blank">GitHub 링크</a>
+            </div>
+            <div class="project">
+                <h3>프로젝트 2: 실시간 협업 애플리케이션</h3>
+                <p>웹소켓을 사용하여 실시간 협업 기능을 구현한 애플리케이션으로 여러 도구를 사용한 협업과 화상 통화 기능을 제공합니다.</p>
+                <a href="https://github.com/your-github/project2" target="_blank">GitHub 링크</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 학력 -->
+    <section id="education">
+        <div class="container">
+            <h2>학력</h2>
+            <ul>
+                <li>2023 - 2025 : 동양미래대학교 컴퓨터소프트웨어공학과</li>
+                <li>2025 - 2026 : 전공심화과정</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 수상 및 자격 -->
+    <section id="awards">
+        <div class="container">
+            <h2>수상 및 자격</h2>
+            <ul>
+                <li>2024 : 동양미래EXPO 대상</li>
+                <li>2024 : 컴퓨터공학과 교내경진대회 우수상</li>
+                <li>2024 : POSTECH OIBC - 재생 에너지 최적 입찰 빅데이터 경진대회 18등</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 김규한. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
